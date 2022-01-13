@@ -31,6 +31,20 @@ public class Main {
 		System.out.println("True and ! = " + !t1);
 		System.out.println("False and ! = " + !f1);
 		System.out.println();
+		
+		double salarioInicial = 1100.50;
+		double salarioAtual = 1956;
+		double diffSalario = salarioAtual - salarioInicial;
+		double beneficioInicial = 300;
+		double beneficioAtual = 300;
+		double diffBeneficio = beneficioAtual - beneficioInicial;
+		boolean processoTrab = diffSalario <= 500 || diffBeneficio <= 50;
+
+		double aumentoSalario = (diffSalario * 100) / salarioInicial;
+		double aumentoBeneficio = (diffBeneficio * 100) / beneficioInicial;
+		
+		System.out.println("O aumento salarial foi de " + aumentoSalario + "%, e o aumento nos benefícios foi de " + aumentoBeneficio + "%.");
+		System.out.println("Portanto, as condições para um processo são: " + processoTrab);
 		}
 
 }
